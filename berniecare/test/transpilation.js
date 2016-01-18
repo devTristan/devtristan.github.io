@@ -34,7 +34,7 @@ var _path2 = _interopRequireDefault(_path);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _blueTape2.default)('transpilation should be up to date', (function () {
+(0, _blueTape2.default)('transpilation should be up to date', function () {
   var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(t) {
     var rootDir, sourceDir, distDir, sources, stats;
     return _regenerator2.default.wrap(function _callee$(_context) {
@@ -79,5 +79,5 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   return function (_x) {
     return ref.apply(this, arguments);
   };
-})());
+}());
 //# sourceMappingURL=transpilation.js.map

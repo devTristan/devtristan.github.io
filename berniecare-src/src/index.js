@@ -84,7 +84,7 @@ function totalTaxes (type, totalIncome, exemptions) {
 class App extends React.Component {
   constructor () {
     super()
-    this.state = { income: 50000, exemptions: 4, healthcare: AVERAGE_HEALTHCARE_COST }
+    this.state = { income: 53657, exemptions: 4, healthcare: AVERAGE_HEALTHCARE_COST }
   }
   render () {
     let { income, exemptions, healthcare } = this.state
@@ -103,7 +103,9 @@ class App extends React.Component {
         <span className="dollarSign">$</span>
       </label>
       <label className="inputArea">
-        <div className="label">Number of exemptions</div>
+        <div className="label">
+          Number of exemptions <a href="https://apps.irs.gov/app/withholdingcalculator/" target="_blank">(?)</a>
+        </div>
         <input type="number" value={ exemptions } onChange={ setExemptions }></input>
       </label>
       <label className="inputArea">
