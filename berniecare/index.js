@@ -145,7 +145,7 @@ function totalTaxes(type, totalIncome, exemptions) {
   return Math.max(taxes, 0);
 }
 
-var App = (function (_React$Component) {
+var App = function (_React$Component) {
   (0, _inherits3.default)(App, _React$Component);
 
   function App() {
@@ -153,7 +153,7 @@ var App = (function (_React$Component) {
 
     var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(App).call(this));
 
-    _this.state = { income: 50000, exemptions: 4, healthcare: AVERAGE_HEALTHCARE_COST };
+    _this.state = { income: 53657, exemptions: 4, healthcare: AVERAGE_HEALTHCARE_COST };
     return _this;
   }
 
@@ -204,7 +204,12 @@ var App = (function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'label' },
-            'Number of exemptions'
+            'Number of exemptions ',
+            _react2.default.createElement(
+              'a',
+              { href: 'https://apps.irs.gov/app/withholdingcalculator/', target: '_blank' },
+              '(?)'
+            )
           ),
           _react2.default.createElement('input', { type: 'number', value: exemptions, onChange: setExemptions })
         ),
@@ -240,7 +245,7 @@ var App = (function (_React$Component) {
     }
   }]);
   return App;
-})(_react2.default.Component);
+}(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
 //# sourceMappingURL=index.js.map
